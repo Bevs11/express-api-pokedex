@@ -13,9 +13,7 @@ server.use(cors()); // Solves communication by other software
 const baseURL = "/api/v1/pokemons";
 const PokemonRoutes = require("./routes/PokemonRoutes.js");
 
-mongoose.connect(
-  "mongodb+srv://beverlymateo11:Similar100@cluster0.2tjm1ux.mongodb.net/pokedexdb"
-);
+mongoose.connect(MONGO_URI);
 
 server.get("/", (request, response) => {
   console.log(`Online on port 8000`);
