@@ -16,7 +16,7 @@ const PokemonRoutes = require("./routes/PokemonRoutes.js");
 mongoose.connect("mongodb://127.0.0.1:27017/pokemondb");
 
 server.get("/", (request, response) => {
-  console.log(`Online on port 8006`);
+  console.log(`Online on port 8000`);
   response.send({ message: "Express server for Pokemon api" });
 });
 
